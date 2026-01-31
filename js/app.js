@@ -3,7 +3,7 @@ import { createItems } from "./items.js";
 
 let items = groceryItems;
 
-// Render App
+
 function render() {
   const app = document.getElementById("app");
   app.innerHTML = "";
@@ -12,11 +12,10 @@ function render() {
   app.appendChild(itemsElement);
 }
 
-// Initialize App
+
 render();
 
 
-// Edit Completed Function
 export function editCompleted(itemId) {
   items = items.map((item) => {
     if (item.id === itemId) {
@@ -25,4 +24,11 @@ export function editCompleted(itemId) {
     return item;
   });
   render();
+}
+
+
+export function removeItem(itemId) {
+  items = items.filter((item) => item.id !== itemId);
+  render();
+  setTimeout(() => alert("Item Deleted Successfully!"), 0);
 }
