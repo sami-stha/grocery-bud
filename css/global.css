@@ -4,22 +4,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
-  background: #eee;
+  background: #dfc8d5;
   font-family: Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.2;
-  color: #222;
+  color: #380202;
 }
 
 .section-center {
   margin: 0 auto;
   margin-top: 8rem;
   max-width: 30rem;
-  background: #fff;
+  background: #a2417dcb;
   border-radius: 0.25rem;
-  padding: 2rem;
+ font-family: "Playfair Display", serif; padding: 2rem;
   position: relative;
+  
+  
 }
